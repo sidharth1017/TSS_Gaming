@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Admin Dashboard</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonts -->
+    
+    <!-- Custom CSS -->
+    <link rel = "stylesheet" href="styles.css">
+  </head>
+  <body id="other-page">
+    <div id="general_bg" class="vw-100 vh-100"></div>
+
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top product" id = "navigation_bar_home">
+      <div class="container">
+        <a class="navbar-brand mr-auto" href="./index.html">
+          <img src="./images/logo tss.png" alt="" class="navbar_logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+          <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mr-3"><a class="nav-link" href="./index.html"><strong>Home</strong></a></li>
+            <li class="nav-item mr-3"><a class="nav-link" href="./about.html"><strong>About</strong></a></li>
+            <li class="nav-item mr-3 active"><a class="nav-link" href="#"><strong>Dashboard</strong></a></li>
+            <li class="nav-item mr-3"><a class="nav-link" href="./profile.html"><strong>Profile</strong></a></li>
+            <li class="nav-item"><a href="./admin_login.html" class="btn primary_btn float-right d-inline">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="winnerModal" tabindex="-1" role="dialog" aria-labelledby="winnerModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content bordered text-white black_bg product">
+          <div class="container-fluid">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="text-white">&times;</span>
+            </button>
+            <div class="row mx-0 my-4">
+              <div class="col-12 col-lg-6 mb-3">
+                <h5>Tournament Name</h5>
+              </div>
+              <div class="col-12 col-lg-6 text-lg-right mb-3">
+                <p class="mb-0">
+                  <i class="fa fa-calendar text_red"></i> 21 March 21 
+                  <i class="fa fa-clock-o text_red"></i> 3pm
+                </p>
+              </div>
+            </div>
+            <form action="">
+              <div class="row mx-0 mb-2">
+                <div class="col-6 offset-lg-1 d-none d-lg-block">
+                  <p class="mb-0">Player Name</p>
+                </div>
+                <div class="col-2 col-lg-1 text-center d-none d-lg-block">
+                  <p class="mb-0">Kills</p>
+                </div>
+                <div class="col-2 col-lg-1 text-center d-none d-lg-block">
+                  <p class="mb-0">Streak</p>
+                </div>
+                <div class="col-2 col-lg-1 text-center d-none d-lg-block">
+                  <p class="mb-0">Damage</p>
+                </div>
+                <div class="col-2 col-lg-1 text-center d-none d-lg-block">
+                  <p class="mb-0">Etc</p>
+                </div>
+              </div>
+              <div class="row mx-0">
+                <div class="col-12 col-lg-6 offset-lg-1 mb-0">
+                  <label for="" class="d-lg-none mt-2">Player Name</label>
+                  <div class="form-group row">
+                    <label class="col-1 col-form-label">1.</label>
+                    <div class="col-10">
+                      <input type="text" class="form-control form-control-sm bg-secondary">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Kills</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Streak</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Damage</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Etc</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+              </div>
+              <div class="row mx-0">
+                <div class="col-12 col-lg-6 offset-lg-1 mb-0">
+                  <label for="" class="d-lg-none mt-2">Player Name</label>
+                  <div class="form-group row">
+                    <label class="col-1 col-form-label">2.</label>
+                    <div class="col-10">
+                      <input type="text" class="form-control form-control-sm bg-secondary">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Kills</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Streak</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Damage</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Etc</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+              </div>
+              <div class="row mx-0">
+                <div class="col-12 col-lg-6 offset-lg-1 mb-0">
+                  <label for="" class="d-lg-none mt-2">Player Name</label>
+                  <div class="form-group row">
+                    <label class="col-1 col-form-label">3.</label>
+                    <div class="col-10">
+                      <input type="text" class="form-control form-control-sm bg-secondary">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Kills</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Streak</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Damage</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Etc</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+              </div>
+              <div class="row mx-0">
+                <div class="col-12 col-lg-6 offset-lg-1 mb-0">
+                  <label for="" class="d-lg-none mt-2">Player Name</label>
+                  <div class="form-group row">
+                    <label class="col-1 col-form-label">4.</label>
+                    <div class="col-10">
+                      <input type="text" class="form-control form-control-sm bg-secondary">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Kills</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Streak</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Damage</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Etc</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+              </div>
+              <div class="row mx-0">
+                <div class="col-12 col-lg-6 offset-lg-1 mb-0">
+                  <label for="" class="d-lg-none mt-2">Player Name</label>
+                  <div class="form-group row">
+                    <label class="col-1 col-form-label">5.</label>
+                    <div class="col-10">
+                      <input type="text" class="form-control form-control-sm bg-secondary">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Kills</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Streak</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Damage</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+                <div class="col-6 col-lg-1 text-center mb-0">
+                  <label class="d-lg-none">Etc</label>
+                  <input type="text" name="" id="" class="form-control form-control-sm w-100 bg-secondary">
+                </div>
+              </div>
+              <div class="row mx-0 mt-3 mb-4">
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-sm primary_btn px-4">Declare Winners</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid text-white product">
+      <div class="row mx-0 mb-5">
+        <div class="col-12 col-lg-10 offset-lg-1 mb-5">
+          <h1 class="mb-5 text-center bahnschrift">Create New Tournament</h1>
+          <div class="w-100 glassy bordered mb-5 py-4">
+            <form action="">
+              <div class="row mx-0">
+                <div class="col-12 col-lg-4">
+                  <div class="form-row">
+                    <div class="col-12 mb-3">
+                      <div class="light_input">
+                        <label class="sponsors_input thumbnail_input m-0">
+                          <input type="file">
+                          <span class="thumbnail_input_label text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 53.656 53.656">
+                              <g id="Icon_ionic-ios-add-circle-outline" data-name="Icon ionic-ios-add-circle-outline" transform="translate(-3.375 -3.375)">
+                                <path id="Path_59" data-name="Path 59" d="M35.921,22.185H26.312V12.575a2.064,2.064,0,0,0-4.127,0v9.609H12.575a1.977,1.977,0,0,0-2.064,2.064,2,2,0,0,0,2.064,2.064h9.609v9.609a2,2,0,0,0,2.064,2.064,2.053,2.053,0,0,0,2.064-2.064V26.312h9.609a2.064,2.064,0,1,0,0-4.127Z" transform="translate(5.955 5.955)" fill="#fff"/>
+                                <path id="Path_60" data-name="Path 60" d="M30.2,6.986A23.22,23.22,0,0,1,46.622,46.622,23.22,23.22,0,0,1,13.784,13.784,23.063,23.063,0,0,1,30.2,6.986m0-3.611A26.828,26.828,0,1,0,57.031,30.2,26.824,26.824,0,0,0,30.2,3.375Z" fill="#fff"/>
+                              </g>
+                            </svg>
+                            <br>
+                            <br>
+                            Thumbnail
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-4 mb-3">
+                      <div class="w-75">
+                        <div class="light_input">
+                          <label class="sponsors_input thumbnail_input m-0">
+                            <input type="file">
+                            <span class="thumbnail_input_label small_thumbnail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 53.656 53.656">
+                                <g id="Icon_ionic-ios-add-circle-outline" data-name="Icon ionic-ios-add-circle-outline" transform="translate(-3.375 -3.375)">
+                                  <path id="Path_59" data-name="Path 59" d="M35.921,22.185H26.312V12.575a2.064,2.064,0,0,0-4.127,0v9.609H12.575a1.977,1.977,0,0,0-2.064,2.064,2,2,0,0,0,2.064,2.064h9.609v9.609a2,2,0,0,0,2.064,2.064,2.053,2.053,0,0,0,2.064-2.064V26.312h9.609a2.064,2.064,0,1,0,0-4.127Z" transform="translate(5.955 5.955)" fill="#fff"/>
+                                  <path id="Path_60" data-name="Path 60" d="M30.2,6.986A23.22,23.22,0,0,1,46.622,46.622,23.22,23.22,0,0,1,13.784,13.784,23.063,23.063,0,0,1,30.2,6.986m0-3.611A26.828,26.828,0,1,0,57.031,30.2,26.824,26.824,0,0,0,30.2,3.375Z" fill="#fff"/>
+                                </g>
+                              </svg>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 mb-3">
+                      <div class="w-75 mx-auto">
+                        <div class="light_input">
+                          <label class="sponsors_input thumbnail_input m-0">
+                            <input type="file">
+                            <span class="thumbnail_input_label small_thumbnail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 53.656 53.656">
+                                <g id="Icon_ionic-ios-add-circle-outline" data-name="Icon ionic-ios-add-circle-outline" transform="translate(-3.375 -3.375)">
+                                  <path id="Path_59" data-name="Path 59" d="M35.921,22.185H26.312V12.575a2.064,2.064,0,0,0-4.127,0v9.609H12.575a1.977,1.977,0,0,0-2.064,2.064,2,2,0,0,0,2.064,2.064h9.609v9.609a2,2,0,0,0,2.064,2.064,2.053,2.053,0,0,0,2.064-2.064V26.312h9.609a2.064,2.064,0,1,0,0-4.127Z" transform="translate(5.955 5.955)" fill="#fff"/>
+                                  <path id="Path_60" data-name="Path 60" d="M30.2,6.986A23.22,23.22,0,0,1,46.622,46.622,23.22,23.22,0,0,1,13.784,13.784,23.063,23.063,0,0,1,30.2,6.986m0-3.611A26.828,26.828,0,1,0,57.031,30.2,26.824,26.824,0,0,0,30.2,3.375Z" fill="#fff"/>
+                                </g>
+                              </svg>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 mb-3">
+                      <div class="w-75 ml-auto">
+                        <div class="light_input">
+                          <label class="sponsors_input thumbnail_input m-0">
+                            <input type="file">
+                            <span class="thumbnail_input_label small_thumbnail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 53.656 53.656">
+                                <g id="Icon_ionic-ios-add-circle-outline" data-name="Icon ionic-ios-add-circle-outline" transform="translate(-3.375 -3.375)">
+                                  <path id="Path_59" data-name="Path 59" d="M35.921,22.185H26.312V12.575a2.064,2.064,0,0,0-4.127,0v9.609H12.575a1.977,1.977,0,0,0-2.064,2.064,2,2,0,0,0,2.064,2.064h9.609v9.609a2,2,0,0,0,2.064,2.064,2.053,2.053,0,0,0,2.064-2.064V26.312h9.609a2.064,2.064,0,1,0,0-4.127Z" transform="translate(5.955 5.955)" fill="#fff"/>
+                                  <path id="Path_60" data-name="Path 60" d="M30.2,6.986A23.22,23.22,0,0,1,46.622,46.622,23.22,23.22,0,0,1,13.784,13.784,23.063,23.063,0,0,1,30.2,6.986m0-3.611A26.828,26.828,0,1,0,57.031,30.2,26.824,26.824,0,0,0,30.2,3.375Z" fill="#fff"/>
+                                </g>
+                              </svg>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                  <h5 class="bahnschrift">Tournament Name</h5>
+                  <input type="text" class="w-100 dark_input mb-4" required>
+                  <div class="form-row">
+                    <div class="col-12 col-lg-6 pr-3 mb-4">
+                      <h5 class="bahnschrift">Description</h5>
+                      <textarea rows="4" class="w-100 dark_input" required></textarea>
+                    </div>
+                    <div class="col-12 col-lg-6 pr-3 mb-4">
+                      <h5 class="bahnschrift">More Details</h5>
+                      <textarea rows="4" class="w-100 dark_input" required></textarea>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-6 col-lg-3 pr-3 mb-4">
+                      <h5 class="bahnschrift">Game</h5>
+                      <input type="text" class="w-100 dark_input" required>
+                    </div>
+                    <div class="col-6 col-lg-3 pr-3 mb-4">
+                      <h5 class="bahnschrift">Date</h5>
+                      <input type="date" class="w-100 dark_input" required>
+                    </div>
+                    <div class="col-6 col-lg-3 pr-3 mb-4">
+                      <h5 class="bahnschrift">Time</h5>
+                      <input type="time" class="w-100 dark_input" required>
+                    </div>
+                    <div class="col-6 col-lg-3 pr-3 mb-4">
+                      <h5 class="bahnschrift">Type</h5>
+                      <input type="text" class="w-100 dark_input" required>
+                    </div>
+                    <div class="col-6 col-lg-3 pr-3 mb-4">
+                      <h5 class="bahnschrift">Entry</h5>
+                      <input type="text" class="w-100 dark_input" required>
+                    </div>
+                    <div class="col-6 col-lg-3 pr-3 mb-4">
+                      <h5 class="bahnschrift">Prize Total</h5>
+                      <input type="text" class="w-100 dark_input" required>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <h5 class="bahnschrift">Sponsors</h5>
+                      <div class="row mx-0">
+                        <div class="col-3 pl-0">
+                          <label class="sponsors_input w-100 dark_input text-center">
+                            <input type="file">
+                            <span>&nbsp;</span>
+                          </label>
+                        </div>
+                        <div class="col-3 pl-0">
+                          <label class="sponsors_input w-100 dark_input text-center">
+                            <input type="file">
+                            <span>&nbsp;</span>
+                          </label>
+                        </div>
+                        <div class="col-3 pl-0">
+                          <label class="sponsors_input w-100 dark_input text-center">
+                            <input type="file">
+                            <span>&nbsp;</span>
+                          </label>
+                        </div>
+                        <div class="col-3 pl-0">
+                          <label class="sponsors_input w-100 dark_input text-center">
+                            <input type="file">
+                            <span>&nbsp;</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <h5 class="bahnschrift ml-2">Prize Distribution</h5>
+                  <div class="form-row dark_input py-3 mx-2">
+                    <div class="col-4 col-lg-2">
+                      <label>KILLS</label>
+                      <input type="text" class="w-100 dark_input mb-3">
+                    </div>
+                    <div class="col-4 col-lg-2">
+                      <label>STREAK</label>
+                      <input type="text" class="w-100 dark_input mb-3">
+                    </div>
+                    <div class="col-4 col-lg-2">
+                      <label>DAMAGE</label>
+                      <input type="text" class="w-100 dark_input mb-3">
+                    </div>
+                    <div class="col-4 col-lg-2">
+                      <label>REVIVES</label>
+                      <input type="text" class="w-100 dark_input mb-3">
+                    </div>
+                    <div class="col-4 col-lg-2">
+                      <label>ETC</label>
+                      <input type="text" class="w-100 dark_input mb-3">
+                    </div>
+                    <div class="col-4 col-lg-2">
+                      <label>ETC</label>
+                      <input type="text" class="w-100 dark_input mb-3">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 text-center mt-5">
+                  <button type="submit" class="btn primary_btn btn-sm px-4">
+                    Create New Tournament 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 53.656 53.656" class="ml-2">
+                      <g id="Icon_ionic-ios-add-circle-outline" data-name="Icon ionic-ios-add-circle-outline" transform="translate(-3.375 -3.375)">
+                        <path id="Path_59" data-name="Path 59" d="M35.921,22.185H26.312V12.575a2.064,2.064,0,0,0-4.127,0v9.609H12.575a1.977,1.977,0,0,0-2.064,2.064,2,2,0,0,0,2.064,2.064h9.609v9.609a2,2,0,0,0,2.064,2.064,2.053,2.053,0,0,0,2.064-2.064V26.312h9.609a2.064,2.064,0,1,0,0-4.127Z" transform="translate(5.955 5.955)" fill="#fff"/>
+                        <path id="Path_60" data-name="Path 60" d="M30.2,6.986A23.22,23.22,0,0,1,46.622,46.622,23.22,23.22,0,0,1,13.784,13.784,23.063,23.063,0,0,1,30.2,6.986m0-3.611A26.828,26.828,0,1,0,57.031,30.2,26.824,26.824,0,0,0,30.2,3.375Z" fill="#fff"/>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="pb-5"></div>
+          <h1 class="mb-5 text-center bahnschrift">Prize Withdrawal Request</h1>
+          <div class="w-100 black_bg bordered mb-5">
+            <div class="row mx-0 py-4 align-items-center">
+              <div class="col-9 col-lg-2 mb-3 order-1">
+                <h5 class="mb-0 font-weight-bold">SOUL Mortal</h5>
+              </div>
+              <div class="col-3 col-lg-2 order-2 order-lg-4 text-right text-lg-center mb-3">
+                <h5 class="mb-0 product_20">1st</h5>
+              </div>
+              <div class="col-12 col-lg-3 order-3 text-center mb-3">
+                <h5 class="mb-3 font-weight-bold"><span class="mr-2">COD</span><span class="ml-2">SOLO</span></h5>
+                <p class="mb-0">
+                  <i class="fa fa-calendar text_red"></i> 21 March 21 
+                  <i class="fa fa-clock-o text_red"></i> 3pm
+                </p>
+              </div>
+              <div class="col-12 col-lg-2 text-center text-lg-left mb-3 order-5">
+                <h5 class="mb-0 product_20">Prize<br>20,000 Coins</h5>
+              </div>
+              <div class="col-12 col-lg-3 text-center order-6">
+                <button class="btn btn-sm px-4 secondary_btn mx-2">Reject</button>
+                <button class="btn btn-sm px-4 primary_btn mx-2">Accept</button>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 black_bg bordered mb-5">
+            <div class="row mx-0 py-4 align-items-center">
+              <div class="col-9 col-lg-2 mb-3 order-1">
+                <h5 class="mb-0 font-weight-bold">SOUL Mortal</h5>
+              </div>
+              <div class="col-3 col-lg-2 order-2 order-lg-4 text-right text-lg-center mb-3">
+                <h5 class="mb-0 product_20">1st</h5>
+              </div>
+              <div class="col-12 col-lg-3 order-3 text-center mb-3">
+                <h5 class="mb-3 font-weight-bold"><span class="mr-2">COD</span><span class="ml-2">SOLO</span></h5>
+                <p class="mb-0">
+                  <i class="fa fa-calendar text_red"></i> 21 March 21 
+                  <i class="fa fa-clock-o text_red"></i> 3pm
+                </p>
+              </div>
+              <div class="col-12 col-lg-2 text-center text-lg-left mb-3 order-5">
+                <h5 class="mb-0 product_20">Prize<br>20,000 Coins</h5>
+              </div>
+              <div class="col-12 col-lg-3 text-center order-6">
+                <button class="btn btn-sm px-4 secondary_btn mx-2">Reject</button>
+                <button class="btn btn-sm px-4 primary_btn mx-2">Accept</button>
+              </div>
+            </div>
+          </div>
+          <div class="collapse" id="all_prize">
+            <div class="w-100 black_bg bordered mb-5">
+              <div class="row mx-0 py-4">
+                <div class="col-12 text-center text-lg-left">
+                  <p class="mb-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info mr-1"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>
+                    No Prize Withdrawal Request for now. You may check after some time.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 text-center mb-5">
+            <button class="btn primary_btn px-5" data-toggle="collapse" data-target="#all_prize">View All <i class="fa fa-chevron-down"></i></button>
+          </div>
+          <div class="py-5"></div>
+          <h1 class="my-5 text-center bahnschrift">Ongoing Tournament</h1>
+          <div class="w-100 black_bg bordered mb-5">
+            <div class="row mx-0 py-4">
+              <div class="col-12 col-lg-3">
+                <div class="row mx-0 align-items-center text-center mb-4 mb-lg-0">
+                  <div class="col-4">
+                    <img src="https://i.pinimg.com/474x/df/72/d5/df72d51685e99a265ad186bada408e27.jpg" alt="" class="rounded-circle w-100 mb-2">
+                    <span>SOUL</span>
+                  </div>
+                  <div class="col-4">
+                    <span>VS</span>
+                  </div>
+                  <div class="col-4">
+                    <img src="https://i.pinimg.com/474x/df/72/d5/df72d51685e99a265ad186bada408e27.jpg" alt="" class="rounded-circle w-100 mb-2">
+                    <span>HYDRA</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3 text-center mb-2">
+                <h5 class="mb-3 font-weight-bold"><span class="mr-2">COD</span><span class="ml-2">SOLO</span></h5>
+                <p class="">
+                  <i class="fa fa-calendar text_red"></i> 21 March 21 
+                  <i class="fa fa-clock-o text_red"></i> 3pm
+                </p>
+              </div>
+              <div class="col-12 col-lg-3 mb-2">
+                <h5 class="text-center text-lg-left">Prize</h5>
+                <h5 class="text-center text-lg-left mb-2">20,000 Coins</h5>
+              </div>
+              <div class="col-12 col-lg-3 text-center">
+                <button class="btn secondary_btn btn-sm" onclick="onGoing(1)">View Details <i class="fa fa-chevron-down down_arrow_1"></i></button>
+              </div>
+              <div class="col-12 col-lg-3 offset-lg-3 collapse ongoing_1 text-center mb-2">
+                <p class="mb-2 product_20"><strong>Team Members</strong></p>
+                <ul class="list-unstyled mb-0">
+                  <li>SOUL Mortal</li>
+                  <li>SOUL Mortal</li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3 collapse ongoing_1 mb-2">
+                <p class="mb-1">Room ID : Game154</p>
+                <p class="mb-0">Room Password : Game154</p>
+              </div>
+              <div class="col-12 col-lg-3 text-center collapse ongoing_1">
+                <button class="btn btn-sm primary_btn" data-toggle="modal" data-target="#winnerModal">Enter Winners</button>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 black_bg bordered mb-5">
+            <div class="row mx-0 py-4">
+              <div class="col-12 col-lg-3">
+                <div class="row mx-0 align-items-center text-center mb-4 mb-lg-0">
+                  <div class="col-4">
+                    <img src="https://i.pinimg.com/474x/df/72/d5/df72d51685e99a265ad186bada408e27.jpg" alt="" class="rounded-circle w-100 mb-2">
+                    <span>SOUL</span>
+                  </div>
+                  <div class="col-4">
+                    <span>VS</span>
+                  </div>
+                  <div class="col-4">
+                    <img src="https://i.pinimg.com/474x/df/72/d5/df72d51685e99a265ad186bada408e27.jpg" alt="" class="rounded-circle w-100 mb-2">
+                    <span>HYDRA</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3 text-center mb-2">
+                <h5 class="mb-3 font-weight-bold"><span class="mr-2">COD</span><span class="ml-2">SOLO</span></h5>
+                <p class="">
+                  <i class="fa fa-calendar text_red"></i> 21 March 21 
+                  <i class="fa fa-clock-o text_red"></i> 3pm
+                </p>
+              </div>
+              <div class="col-12 col-lg-3 mb-2">
+                <h5 class="text-center text-lg-left">Prize</h5>
+                <h5 class="text-center text-lg-left mb-2">20,000 Coins</h5>
+              </div>
+              <div class="col-12 col-lg-3 text-center">
+                <button class="btn secondary_btn btn-sm" onclick="onGoing(2)">View Details <i class="fa fa-chevron-down down_arrow_2"></i></button>
+              </div>
+              <div class="col-12 col-lg-3 offset-lg-3 collapse ongoing_2 text-center">
+                <p class="mb-2 product_20"><strong>Team Members</strong></p>
+                <ul class="list-unstyled mb-0">
+                  <li>SOUL Mortal</li>
+                  <li>SOUL Mortal</li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-6 collapse ongoing_2">
+                <p class="mb-1">Room ID : Game154</p>
+                <p class="mb-0">Room Password : Game154</p>
+              </div>
+            </div>
+          </div>
+          <div class="collapse" id="all_ongoing">
+            <div class="w-100 black_bg bordered mb-5">
+              <div class="row mx-0 py-4">
+                <div class="col-12 col-lg-6 text-center text-lg-left">
+                  <p class="mb-1 mb-lg-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info mr-1"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>
+                    There are no Ongoing Tournament
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6 text-center text-lg-right">
+                  <span class="d-inline">Create one now!</span>
+                  <button class="btn btn-sm primary_btn d-inline px-4 ml-3 mt-2 mt-lg-0">Create Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 text-center mb-5">
+            <button class="btn primary_btn px-5" data-toggle="collapse" data-target="#all_ongoing">View All <i class="fa fa-chevron-down"></i></button>
+          </div>
+          <div class="py-5"></div>
+          <h1 class="mb-5 text-center bahnschrift">Upcoming Tournaments</h1>
+          <div class="w-100 black_bg bordered mb-5">
+            <div class="row mx-0 py-4">
+              <div class="col-12 col-lg-3">
+                <div class="row mx-0 align-items-center text-center mb-4 mb-lg-0">
+                  <div class="col-4">
+                    <img src="https://i.pinimg.com/474x/df/72/d5/df72d51685e99a265ad186bada408e27.jpg" alt="" class="rounded-circle w-100 mb-2">
+                  </div>
+                  <div class="col-4">
+                    <span>VS</span>
+                  </div>
+                  <div class="col-4">
+                    <img src="https://i.pinimg.com/474x/df/72/d5/df72d51685e99a265ad186bada408e27.jpg" alt="" class="rounded-circle w-100 mb-2">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3 text-center mb-3">
+                <h5 class="mb-2 font-weight-bold"><span class="mr-2">COD</span><span class="ml-2">SOLO</span></h5>
+                <p class="mb-0">
+                  <i class="fa fa-calendar text_red"></i> 21 March 21 
+                  <i class="fa fa-clock-o text_red"></i> 3pm
+                </p>
+              </div>
+              <div class="col-12 col-lg-3 text-center mb-3">
+                <h6>Prize</h6>
+                <h5>20,000 Coins</h5>
+              </div>
+              <div class="col-12 col-lg-3 text-center mb-5">
+                <button class="btn btn-sm secondary_btn px-5 mx-2" onclick="upcoming(1)">View Details <i class="fa fa-chevron-down upcoming_arrow_1"></i></button>
+              </div>
+              <div class="collapse upcoming_1 row mx-0 w-100 align-items-center" id="upcoming_1">
+                <div class="col-12 col-lg-3">
+                  <form action="">
+                    <div class="form-group row mb-0">
+                      <label for="" class="col-12 col-lg-5 col-form-label">Room ID : </label>
+                      <div class="col-12 col-lg-7">
+                        <input type="text" class="form-control form-control-sm bg-secondary text-white w-100" value="Game154">
+                      </div>
+                    </div>
+                    <div class="form-group row mb-0 align-items-center">
+                      <label for="" class="col-12 col-lg-5 col-form-label">Room Password : </label>
+                      <div class="col-12 col-lg-7">
+                        <input type="text" class="form-control form-control-sm bg-secondary text-white w-100" value="Game154">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="" class="col-12 col-lg-5 col-form-label">Stream Link : </label>
+                      <div class="col-12 col-lg-7">
+                        <input type="text" class="form-control form-control-sm bg-secondary text-white w-100">
+                      </div>
+                    </div>
+                    <div class="form-group text-center mb-3 mb-lg-0">
+                      <button type="submit" class="btn primary_btn btn-sm">Update</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <h6>Team</h6>
+                  <ul class="list-unstyled text-secondary">
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <h6>Team</h6>
+                  <ul class="list-unstyled text-secondary">
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <h6>Team</h6>
+                  <ul class="list-unstyled text-secondary">
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 black_bg bordered mb-5">
+            <div class="row mx-0 py-4">
+              <div class="col-12 col-lg-3">
+                <div class="row mx-0 align-items-center text-center mb-4 mb-lg-0">
+                  <div class="col-4">
+                    <img src="https://i.pinimg.com/474x/df/72/d5/df72d51685e99a265ad186bada408e27.jpg" alt="" class="rounded-circle w-100 mb-2">
+                  </div>
+                  <div class="col-4">
+                    <span>VS</span>
+                  </div>
+                  <div class="col-4">
+                    <img src="https://i.pinimg.com/474x/df/72/d5/df72d51685e99a265ad186bada408e27.jpg" alt="" class="rounded-circle w-100 mb-2">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3 text-center mb-3">
+                <h5 class="mb-2 font-weight-bold"><span class="mr-2">COD</span><span class="ml-2">SOLO</span></h5>
+                <p class="mb-0">
+                  <i class="fa fa-calendar text_red"></i> 21 March 21 
+                  <i class="fa fa-clock-o text_red"></i> 3pm
+                </p>
+              </div>
+              <div class="col-12 col-lg-3 text-center mb-3">
+                <h6>Prize</h6>
+                <h5>20,000 Coins</h5>
+              </div>
+              <div class="col-12 col-lg-3 text-center  mb-5">
+                <button class="btn btn-sm secondary_btn px-5 mx-2" onclick="upcoming(2)">View Details <i class="fa fa-chevron-down upcoming_arrow_2"></i></button>
+              </div>
+              <div class="collapse upcoming_2 row mx-0 w-100 mt-3 align-items-center" id="upcoming_2">
+                <div class="col-12 col-lg-3">
+                  <form action="">
+                    <div class="form-group row mb-0">
+                      <label for="" class="col-12 col-lg-5 col-form-label">Room ID : </label>
+                      <div class="col-12 col-lg-7">
+                        <input type="text" class="form-control form-control-sm bg-secondary text-white w-100" value="Game154">
+                      </div>
+                    </div>
+                    <div class="form-group row mb-0 align-items-center">
+                      <label for="" class="col-12 col-lg-5 col-form-label">Room Password : </label>
+                      <div class="col-12 col-lg-7">
+                        <input type="text" class="form-control form-control-sm bg-secondary text-white w-100" value="Game154">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="" class="col-12 col-lg-5 col-form-label">Stream Link : </label>
+                      <div class="col-12 col-lg-7">
+                        <input type="text" class="form-control form-control-sm bg-secondary text-white w-100">
+                      </div>
+                    </div>
+                    <div class="form-group text-center mb-3 mb-lg-0">
+                      <button type="submit" class="btn primary_btn btn-sm">Update</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <h6>Team</h6>
+                  <ul class="list-unstyled text-secondary">
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <h6>Team</h6>
+                  <ul class="list-unstyled text-secondary">
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <h6>Team</h6>
+                  <ul class="list-unstyled text-secondary">
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collapse" id="all_upcoming">
+            <div class="w-100 black_bg bordered mb-5">
+              <div class="row mx-0 py-4">
+                <div class="col-12 col-lg-6 text-center text-lg-left">
+                  <p class="mb-1 mb-lg-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info mr-1"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>
+                    There are no Upcoming Tournament scheduled
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6 text-center text-lg-right">
+                  <span class="d-inline">Create one now!</span>
+                  <button class="btn btn-sm primary_btn d-inline px-4 ml-3 mt-2 mt-lg-0">Create Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 text-center mb-5">
+            <button class="btn primary_btn px-5" data-toggle="collapse" data-target="#all_upcoming">View All <i class="fa fa-chevron-down"></i></button>
+          </div>
+          <div class="py-5"></div>
+          <h1 class="mb-5 text-center bahnschrift">Previous Tournaments</h1>
+          <div class="w-100 black_bg bordered mb-5">
+            <div class="row mx-0 py-4">
+              <div class="col-12 col-lg-3">
+                <div class="row mx-0 align-items-center text-center mb-4 mb-lg-0">
+                  <div class="col-4">
+                    <img src="https://i.pinimg.com/474x/df/72/d5/df72d51685e99a265ad186bada408e27.jpg" alt="" class="rounded-circle w-100 mb-2">
+                  </div>
+                  <div class="col-4">
+                    <span>VS</span>
+                  </div>
+                  <div class="col-4">
+                    <img src="https://i.pinimg.com/474x/df/72/d5/df72d51685e99a265ad186bada408e27.jpg" alt="" class="rounded-circle w-100 mb-2">
+                  </div>
+                </div>
+              </div>
+              <div class="col-9 col-lg-3 text-lg-center mb-3">
+                <h5 class="mb-2 font-weight-bold"><span class="mr-2">COD</span><span class="ml-2">SOLO</span></h5>
+                <p class="mb-0">
+                  <i class="fa fa-calendar text_red"></i> 21 March 21 
+                  <i class="fa fa-clock-o text_red"></i> 3pm
+                </p>
+              </div>
+              <div class="col-3 col-lg-2 text-right text-lg-center mb-3">
+                <h6>Winner</h6>
+                <h5 class="font-weight-bold">SOUL</h5>
+              </div>
+              <div class="col-12 col-lg-4 text-center text-lg-right mb-5">
+                <button class="btn btn-sm secondary_btn px-lg-4 mx-2" onclick="played(1)">View Details <i class="fa fa-chevron-down played_arrow_1"></i></button>
+              </div>
+              <div class="collapse played_1 row mx-0" id="played_1">
+                <div class="col-12 col-lg-4 order-3 order-lg-1">
+                  <img src="./images/gamer1.jpeg" alt="" class="bordered w-100">
+                </div>
+                <div class="col-12 col-lg-8 order-2 mb-3 mb-lg-0">
+                  <div class="row mx-0 bordered p-3">
+                    <div class="col-12">
+                      <h5 class="text-center mb-4 bahnschrift">ScoreBoard</h5>
+                    </div>
+                    <div class="col-6 col-lg-5 pl-0">
+                      <h6>Players</h6>
+                      <ul class="list-unstyled text-secondary">
+                        <li>Lorem ipsum dolor sit</li>
+                        <li>Lorem ipsum dolor sit</li>
+                        <li>Lorem ipsum dolor sit</li>
+                        <li>Lorem ipsum dolor sit</li>
+                      </ul>
+                    </div>
+                    <div class="col-2 col-lg-1 pl-0 text-center">
+                      <h6>Kills</h6>
+                      <ul class="list-unstyled text-secondary">
+                        <li>22</li>
+                        <li>22</li>
+                        <li>22</li>
+                        <li>22</li>
+                      </ul>
+                    </div>
+                    <div class="col-2 pl-0 text-center">
+                      <h6>Damage</h6>
+                      <ul class="list-unstyled text-secondary">
+                        <li>555</li>
+                        <li>555</li>
+                        <li>555</li>
+                        <li>555</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-3 d-none d-lg-inline pl-0 text-center">
+                      <h6>Health Restored</h6>
+                      <ul class="list-unstyled text-secondary">
+                        <li>555</li>
+                        <li>555</li>
+                        <li>555</li>
+                        <li>555</li>
+                      </ul>
+                    </div>
+                    <div class="col-2 col-lg-1 px-0 text-center">
+                      <h6>K/D</h6>
+                      <ul class="list-unstyled text-secondary">
+                        <li>11</li>
+                        <li>11</li>
+                        <li>11</li>
+                        <li>11</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 black_bg bordered mb-5">
+            <div class="row mx-0 py-4">
+              <div class="col-12 col-lg-3">
+                <div class="row mx-0 align-items-center text-center mb-4 mb-lg-0">
+                  <div class="col-4">
+                    <img src="https://i.pinimg.com/474x/df/72/d5/df72d51685e99a265ad186bada408e27.jpg" alt="" class="rounded-circle w-100 mb-2">
+                  </div>
+                  <div class="col-4">
+                    <span>VS</span>
+                  </div>
+                  <div class="col-4">
+                    <img src="https://i.pinimg.com/474x/df/72/d5/df72d51685e99a265ad186bada408e27.jpg" alt="" class="rounded-circle w-100 mb-2">
+                  </div>
+                </div>
+              </div>
+              <div class="col-9 col-lg-3 text-lg-center mb-3">
+                <h5 class="mb-2 font-weight-bold"><span class="mr-2">COD</span><span class="ml-2">SOLO</span></h5>
+                <p class="mb-0">
+                  <i class="fa fa-calendar text_red"></i> 21 March 21 
+                  <i class="fa fa-clock-o text_red"></i> 3pm
+                </p>
+              </div>
+              <div class="col-3 col-lg-2 text-right text-lg-center mb-3">
+                <h6>Winner</h6>
+                <h5 class="font-weight-bold">SOUL</h5>
+              </div>
+              <div class="col-12 col-lg-4 text-center text-lg-right mb-5">
+                <button class="btn btn-sm secondary_btn px-lg-4 mx-2" onclick="played(2)">View Details <i class="fa fa-chevron-down played_arrow_2"></i></button>
+              </div>
+              <div class="collapse played_2 row mx-0" id="played_1">
+                <div class="col-12 col-lg-4 order-3 order-lg-1">
+                  <img src="./images/gamer1.jpeg" alt="" class="bordered w-100">
+                </div>
+                <div class="col-12 col-lg-8 order-2 mb-3 mb-lg-0">
+                  <div class="row mx-0 bordered p-3">
+                    <div class="col-12">
+                      <h5 class="text-center mb-4 bahnschrift">ScoreBoard</h5>
+                    </div>
+                    <div class="col-6 col-lg-5 pl-0">
+                      <h6>Players</h6>
+                      <ul class="list-unstyled text-secondary">
+                        <li>Lorem ipsum dolor sit</li>
+                        <li>Lorem ipsum dolor sit</li>
+                        <li>Lorem ipsum dolor sit</li>
+                        <li>Lorem ipsum dolor sit</li>
+                      </ul>
+                    </div>
+                    <div class="col-2 col-lg-1 pl-0 text-center">
+                      <h6>Kills</h6>
+                      <ul class="list-unstyled text-secondary">
+                        <li>22</li>
+                        <li>22</li>
+                        <li>22</li>
+                        <li>22</li>
+                      </ul>
+                    </div>
+                    <div class="col-2 pl-0 text-center">
+                      <h6>Damage</h6>
+                      <ul class="list-unstyled text-secondary">
+                        <li>555</li>
+                        <li>555</li>
+                        <li>555</li>
+                        <li>555</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-3 d-none d-lg-inline pl-0 text-center">
+                      <h6>Health Restored</h6>
+                      <ul class="list-unstyled text-secondary">
+                        <li>555</li>
+                        <li>555</li>
+                        <li>555</li>
+                        <li>555</li>
+                      </ul>
+                    </div>
+                    <div class="col-2 col-lg-1 px-0 text-center">
+                      <h6>K/D</h6>
+                      <ul class="list-unstyled text-secondary">
+                        <li>11</li>
+                        <li>11</li>
+                        <li>11</li>
+                        <li>11</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collapse" id="all_previous">
+            <div class="w-100 black_bg bordered mb-5">
+              <div class="row mx-0 py-4">
+                <div class="col-12 col-lg-6 text-center text-lg-left">
+                  <p class="mb-1 mb-lg-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info mr-1"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>
+                    There are no Previous Tournament conducted
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6 text-center text-lg-right">
+                  <span class="d-inline">Create one now!</span>
+                  <button class="btn btn-sm primary_btn d-inline px-4 ml-3 mt-2 mt-lg-0">Create Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 text-center mb-5">
+            <button class="btn primary_btn px-5" data-toggle="collapse" data-target="#all_previous">View All <i class="fa fa-chevron-down"></i></button>
+          </div>
+          <div class="py-5"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="mt-5 py-3 py-lg-5 product">
+      <div class="container-fluid">
+        <div class="row mx-0">
+          <div class="col-12 col-lg-10 offset-lg-1">
+            <img src="./images/logo tss.png" alt="" id="footer_logo">
+            <div class="row mx-0">
+              <div class="col-6 mb-3 pl-0">
+                <a href="./index.html" class="nav-link px-0 d-inline mr-3"><b>Home</b></a>
+                <br class="d-lg-none">
+                <a href="#" class="nav-link px-0 d-inline mr-3"><b>Dashboard</b></a>
+                <br class="d-lg-none">
+                <a href="./profile.html" class="nav-link px-0 d-inline mr-3"><b>Profile</b></a>
+              </div>
+              <div class="col-6 col-lg-3 offset-lg-1 text-right mb-3 pr-0">
+                <a href="./about.html#contact_section" class="nav-link px-0 d-inline ml-3"><b>Contact</b></a>
+                <br class="d-lg-none">
+                <a href="./about.html" class="nav-link px-0 d-inline ml-3"><b>About</b></a>
+              </div>
+              <div class="col-12 col-lg-2 text-center text-lg-left">
+                <p class="text-white ml-3 ml-lg-0"><strong>Follow Us</strong></p>
+                <p class="ml-3 ml-lg-2"><strong>
+                  <a href="#" class="nav-link py-0 px-1 d-inline"><i class="fa fa-facebook-square"></i></a>
+                  <a href="#" class="nav-link py-0 px-1 d-inline"><i class="fa fa-instagram"></i></a>
+                </strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          $('.navbar').toggleClass("navbar_scrolled", ($(window).scrollTop() > 100));
+          $('.navbar_logo').toggleClass("navbar_logo_scrolled", ($(window).scrollTop() > 100));
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $(".navbar-toggler").click(function(){
+          $(".navbar").toggleClass("navbar_open");
+        });
+      });
+    </script>
+    <script>
+      function onGoing(n) {
+        var ongoing_collapse = '.ongoing_' + n;
+        $(ongoing_collapse).collapse('toggle');
+        var arrow = '.down_arrow_' + n;
+        $(arrow).toggleClass("rotate_arrow");
+      }
+    </script>
+    <script>
+      function played(n) {
+        var played_collapse = '.played_' + n;
+        $(played_collapse).collapse('toggle');
+        var arrow = '.played_arrow_' + n;
+        $(arrow).toggleClass("rotate_arrow");
+      }
+    </script>
+    <script>
+      function upcoming(n) {
+        var upcoming_collapse = '.upcoming_' + n;
+        $(upcoming_collapse).collapse('toggle');
+        var arrow = '.upcoming_arrow_' + n;
+        $(arrow).toggleClass("rotate_arrow");
+      }
+    </script>
+  </body>
+</html>

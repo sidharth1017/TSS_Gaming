@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonts -->
+    
+    <!-- Custom CSS -->
+    <link rel = "stylesheet" href="styles.css">
+  </head>
+  <body id="home-page">
+    <div id="general_bg" class="vw-100 vh-100"></div>
+
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top product" id = "navigation_bar_home">
+      <div class="container">
+        <a class="navbar-brand mr-auto" href="#">
+          <img src="./images/logo tss.png" alt="" class="navbar_logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+          <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mr-3 active"><a class="nav-link" href="#"><strong>Home</strong></a></li>
+            <li class="nav-item mr-3"><a class="nav-link" href="./about.html"><strong>About</strong></a></li>
+            <li class="nav-item mr-3"><a class="nav-link" href="./dashboard.html"><strong>Dashboard</strong></a></li>
+            <li class="nav-item mr-3"><a class="nav-link" href="./profile.html"><strong>Profile</strong></a></li>
+            <li class="nav-item"><a href="./login.html" class="btn primary_btn float-right d-inline">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="registerModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content bordered text-white black_bg product">
+          <div class="container-fluid">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="text-white">&times;</span>
+            </button>
+            <form action="">
+              <div class="row mx-0 my-4">
+                <div class="col-12 col-lg-5 order-1">
+                  <h5>Tournament Name</h5>
+                  <div class="form-check">
+                    <input type="radio" class="register_check" name="team" value="own" checked>
+                    <label>I have my own team</label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input type="radio" class="register_check" name="team" value="pair">
+                    <label>Pair me with a team</label>
+                  </div>
+                  <h5>Player Name</h5>
+                  <div class="form-group row">
+                    <label class="col-1 col-form-label">1.</label>
+                    <div class="col-9">
+                      <input type="text" class="form-control form-control-sm">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-1 col-form-label">2.</label>
+                    <div class="col-9">
+                      <input type="text" class="form-control form-control-sm">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-1 col-form-label">3.</label>
+                    <div class="col-9">
+                      <input type="text" class="form-control form-control-sm">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-1 col-form-label">4.</label>
+                    <div class="col-9">
+                      <input type="text" class="form-control form-control-sm">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7 text-center order-2 mb-3">
+                  <p>
+                    <span class="d-inline mx-2"><i class="fa fa-calendar text_red"></i> : 22 March 2021</span>
+                    <span class="d-inline mx-2"><i class="fa fa-clock-o text_red"></i> : 3 pm IST</span>
+                    <span class="d-inline mx-2"><i class="fa fa-rupee text_red"></i> : FREE</span></p>
+                  <br>
+                  <img src="https://images.indianexpress.com/2020/09/PUBG-mobile-1.jpg" alt="" class="img-rounded w-100 mb-3">
+                  <h5>
+                    <span class="badge badge-secondary px-3 mx-2">SQUAD</span>
+                    <span class="badge badge-secondary px-3 mx-2">10 Teams</span>
+                  </h5>
+                </div>
+                <div class="col-12 col-lg-5 order-5 order-lg-3 text-center">
+                  <button type="submit" class="btn btn-sm primary_btn px-5">
+                    Pay 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 17.934 17.934" class="mx-1">
+                      <path id="Icon_awesome-coins" data-name="Icon awesome-coins" d="M0,14.2v1.5c0,1.236,3.012,2.242,6.725,2.242s6.725-1.005,6.725-2.242V14.2c-1.447,1.019-4.091,1.5-6.725,1.5S1.447,15.216,0,14.2ZM11.208,4.483c3.713,0,6.725-1.005,6.725-2.242S14.921,0,11.208,0,4.483,1.005,4.483,2.242,7.5,4.483,11.208,4.483ZM0,10.522v1.807c0,1.236,3.012,2.242,6.725,2.242s6.725-1.005,6.725-2.242V10.522C12,11.713,9.356,12.329,6.725,12.329S1.447,11.713,0,10.522Zm14.571.385c2.007-.389,3.363-1.11,3.363-1.94v-1.5A8.6,8.6,0,0,1,14.571,8.68ZM6.725,5.6C3.012,5.6,0,6.858,0,8.406s3.012,2.8,6.725,2.8,6.725-1.254,6.725-2.8S10.438,5.6,6.725,5.6Zm7.681,1.972c2.1-.378,3.527-1.121,3.527-1.972v-1.5A11.4,11.4,0,0,1,12.3,5.573,3.922,3.922,0,0,1,14.406,7.576Z" fill="#ffffff"/>
+                    </svg>
+                    500
+                  </button>
+                </div>
+                <div class="col-12 col-lg-7 order-4 text-center mb-2">
+                  <span class="d-inline mr-3">Available Balance : 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 17.934 17.934" class="mx-1">
+                      <path id="Icon_awesome-coins" data-name="Icon awesome-coins" d="M0,14.2v1.5c0,1.236,3.012,2.242,6.725,2.242s6.725-1.005,6.725-2.242V14.2c-1.447,1.019-4.091,1.5-6.725,1.5S1.447,15.216,0,14.2ZM11.208,4.483c3.713,0,6.725-1.005,6.725-2.242S14.921,0,11.208,0,4.483,1.005,4.483,2.242,7.5,4.483,11.208,4.483ZM0,10.522v1.807c0,1.236,3.012,2.242,6.725,2.242s6.725-1.005,6.725-2.242V10.522C12,11.713,9.356,12.329,6.725,12.329S1.447,11.713,0,10.522Zm14.571.385c2.007-.389,3.363-1.11,3.363-1.94v-1.5A8.6,8.6,0,0,1,14.571,8.68ZM6.725,5.6C3.012,5.6,0,6.858,0,8.406s3.012,2.8,6.725,2.8,6.725-1.254,6.725-2.8S10.438,5.6,6.725,5.6Zm7.681,1.972c2.1-.378,3.527-1.121,3.527-1.972v-1.5A11.4,11.4,0,0,1,12.3,5.573,3.922,3.922,0,0,1,14.406,7.576Z" fill="#ffffff"/>
+                    </svg>
+                    50
+                  </span>
+                  <button class="btn btn-sm secondary_btn">Add Coins</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-100" id="hero">
+      <video autoplay muted loop id="video" class="d-none d-lg-block">
+        <source src="./images/hero_video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="d-lg-none" id="hero_banner"></div>
+      <div class="container-fluid text-white mb-5" id="hero_text">
+        <div class="row mx-0">
+          <div class="col-12 col-lg-10 offset-lg-1">
+            <div class="row mx-0 mb-5">
+              <div class="col-12 col-lg-4">
+                <h1 class="my-4 bahnschrift">Gamers own space!</h1>
+                <p class="mb-4 product_20">Tired of playing tournaments that ruin the game for you? 
+                  Are you a gamer looking to level up your skills in a secure and friendly environment?
+                  If you said yes, then TSS Gaming is the place for you!  We bring you tournaments filled with energy and excitement where you bring your A-game and battle it out while playing your favourite games!
+                </p>
+                <button class="btn secondary_btn text-white mr-3">Read More</button>
+                <a class="btn primary_btn px-3" href="#random">Explore!</a>
+                <div class="pb-5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pb-5" id="random"></div>
+    <div class="container-fluid text-white my-5 product">
+      <div class="row mx-0">
+        <div class="col-12 col-lg-10 offset-lg-1">
+          <h1 class="text-center mb-4 mt-5 bahnschrift">Upcoming Tournaments</h1>
+          <div class="row mx-0 bordered black_bg py-4 px-lg-3 mb-4">
+            <div class="col-12 col-lg-6 text-center text-lg-left mb-3 order-1">
+              <h4 class="bahnschrift">War Of Destruction: Season 1</h4>
+            </div>
+            <div class="col-12 col-lg-6 text-center text-lg-right mb-3 order-2">
+              <span class="d-inline mx-3"><i class="fa fa-calendar text_red"></i> 22 March 2021</span>
+              <br class="d-lg-none">
+              <span class="d-inline mx-3"><i class="fa fa-clock-o text_red"></i> 3 pm IST</span>
+              <br class="d-lg-none">
+              <span class="d-inline mx-3"><i class="fa fa-rupee text_red"></i> FREE</span>
+            </div>
+            <div class="col-12 col-lg-4 order-3">
+              <p>TSS gaming presents “War Of Destruction: Season 1”, a PUBGM TDM (Team Death Match) tournament worth 20,000 coins. We are glad to announce that our first tournament has been sponsored by Google so along with our prize pool we are also giving away two Royale Pass to two lucky participants!</p>
+            </div>
+            <div class="col-12 col-lg-3 offset-lg-1 mb-2 order-4">
+              <p class="mb-0 product_20 font-weight-bold">Price : 20,000 Coins</p>
+            </div>
+            <div class="col-12 col-lg-4 mb-3 order-11 order-lg-5">
+              <img src="https://images.indianexpress.com/2020/09/PUBG-mobile-1.jpg" alt="" class="rounded w-100">
+            </div>
+            <div class="col-12 col-lg-4 collapse collapse_1 order-9 order-lg-6">
+              <p>Get ready for an intense and engrossing set of matches with TSS gaming’s first-ever PUBGM tournament! Players Unknown Battlegrounds (PUBG Mobile) has amassed a cult following among mobile game enthusiasts since its release. With realistic weapons, difficult terrains, and stylish cars, this free-to-play multiplayer android shooting game is a crowd-favourite. It features a FPS (first-person shooter) and TPS (third-person shooter) gameplay as well as several unique modes making it the perfect mobile shooting game for competitive gameplay.
+                <br><br>
+                You don’t need a team to register as we automatically pair you with one upon registration. 
+                Registration only costs 500 coins so hurry up gamers and there are 200 slots, filling up fast, so register today!
+              </p>
+            </div>
+            <div class="col-12 col-lg-4 offset-lg-4 text-center collapse collapse_1 mb-2 order-10 order-lg-7">
+              <h5>
+                <span class="badge badge-secondary px-3 mx-2">DUO</span>
+                <span class="badge badge-secondary px-3 mx-2">10 Teams</span>
+                <span class="badge badge-secondary px-3 mx-2">DUO</span>
+              </h5>
+            </div>
+            <div class="col-12 order-8 mb-2">
+              <button class="btn btn-sm secondary_btn text-white px-3 mr-3" onclick="readMore(1)">Read More <i class="fa fa-chevron-down down_arrow_1"></i></button>
+              <button class="btn btn-sm primary_btn px-4" data-toggle="modal" data-target="#registerModal">Register</button>
+            </div>
+          </div>
+          <div class="collapse" id="all_upcoming">
+            <div class="row mx-0 bordered black_bg py-4 px-lg-3 mb-4">
+              <div class="col-12 col-lg-6 text-center text-lg-left">
+                <p class="mb-2 mb-lg-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info mr-1"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>
+                  There are no upcoming tournaments
+                </p>
+              </div>
+              <div class="col-12 col-lg-6 text-center text-lg-right">
+                <span class="d-inline">Watch Previous Tournaments</span>
+                <button class="btn btn-sm primary_btn d-inline px-4 ml-3 mt-2 mt-lg-0">Watch Now!</button>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 text-center mb-5">
+            <div class="col-12">
+              <button class="btn primary_btn px-5" data-toggle="collapse" data-target="#all_upcoming">View More <i class="fa fa-chevron-down"></i></button>
+            </div>
+          </div>
+          <div class="py-5"></div>
+          <div class="row mx-0 mb-5">
+            <div class="col-12">
+              <h1 class="mb-5 text-center bahnschrift">Past Fabulous Matches/ Ongoing Matches</h1>
+            </div>
+            <div class="col-12 col-lg-6 mb-4">
+              <div class="bordered w-100 game_stream">
+                <img src="./images/gmaer2.jpeg" alt="" class="stream_match">
+                <button class="play_btn text-white"><i class="fa fa-play"></i></button>
+                <p class="badge mb-0 stream_type px-4">Live</p>
+                <p class="mb-0 stream_game product_20">PUBG SOLO</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 mb-4">
+              <div class="bordered w-100 mb-4 game_stream small_gamer">
+                <img src="./images/gamer3.jpeg" alt="" class="stream_match">
+                <button class="play_btn text-white"><i class="fa fa-play"></i></button>
+                <p class="badge mb-0 stream_type px-4">Highlights</p>
+                <p class="mb-0 stream_game product_20">COD</p>
+              </div>
+              <div class="bordered w-100 game_stream small_gamer">
+                <img src="./images/gamer1.jpeg" alt="" class="stream_match">
+                <button class="play_btn text-white"><i class="fa fa-play"></i></button>
+                <p class="badge mb-0 stream_type px-4">Highlights</p>
+                <p class="mb-0 stream_game product_20">COD</p>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 text-center mb-5">
+            <div class="col-12 my-5">
+              <h1 class="mb-5 bahnschrift">Sponsors</h1>
+            </div>
+            <div class="col-4 mb-5">
+              <div class="mx-auto sponsor_bg">
+                <img src="./images/google.png" alt="" class="w-100">
+              </div>
+            </div>
+            <div class="col-4 mb-5">
+              <div class="mx-auto sponsor_bg">
+                <img src="./images/ibm.png" alt="" class="w-100">
+              </div>
+            </div>
+            <div class="col-4 mb-5">
+              <div class="mx-auto sponsor_bg">
+                <img src="./images/rog.png" alt="" class="w-100">
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mb-5">
+            <div class="col-12">
+              <h1 class="text-center mb-5 bahnschrift">Happy Customers</h1>
+              <div class="carousel slide w-100" id="testimonial_carousel" data-ride='carousel' data-interval='5000'>
+                <div class="carousel-inner w-100 pb-5">
+                  <div class="carousel-item w-100 active">
+                    <div class="col-12 col-lg-8 offset-lg-2 text-center">
+                      <h3 class="mb-0 text_red text-left"><i class="fa fa-quote-left"></i></h3>
+                      <p class="mb-0 product_20">TSS’s website and app were really easy to use and navigate, I have participated in a lot of tournaments before and this was by far one of the best gaming experiences for me!<br>
+                        They matched me with a team of my skill level before the game started, everything in the tournament was well-organised! Happy with my experience.
+                      </p>
+                      <h3 class="text_red text-right"><i class="fa fa-quote-right"></i></h3>
+                      <div class="row mx-0 align-items-center justify-content-center">
+                        <img src="https://www.iaccelerated.com/wp-content/uploads/bb-plugin/cache/Eryk-Korfel-Profile-photo-407-by-407-pixels-square-square.png" alt="" class="d-inline testimonial_pic mr-3">
+                        <div class="d-inline">
+                          <p class="mb-0">Abraham Joseph</p>
+                          <small>Professional Gamer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item w-100">
+                    <div class="col-12 col-lg-8 offset-lg-2 text-center">
+                      <h3 class="mb-0 text_red text-left"><i class="fa fa-quote-left"></i></h3>
+                      <p class="mb-0 product_20">I really liked how organised TSS’s app is, it allows me to keep track of how well I play in all my matches. TSS’s expert team matching algorithm helped me find a great team that I regularly play with now. Even the prize withdrawal experience is pretty much hassle-free and easy. I strongly recommend TSS Gaming to all my peers!</p>
+                      <h3 class="text_red text-right"><i class="fa fa-quote-right"></i></h3>
+                      <div class="row mx-0 align-items-center justify-content-center">
+                        <img src="https://www.iaccelerated.com/wp-content/uploads/bb-plugin/cache/Eryk-Korfel-Profile-photo-407-by-407-pixels-square-square.png" alt="" class="d-inline testimonial_pic mr-3">
+                        <div class="d-inline">
+                          <p class="mb-0">Rushil Shinde</p>
+                          <small>Avid PUBG Player</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item w-100">
+                    <div class="col-12 col-lg-8 offset-lg-2 text-center">
+                      <h3 class="mb-0 text_red text-left"><i class="fa fa-quote-left"></i></h3>
+                      <p class="mb-0 product_20">As a CODM tournament organizer, I was getting tired of having to advertise my tournaments on hundreds of discord servers and still getting a cold response. TSS helped me change that. Now I barely need to advertise my tournaments and all my slots get filled. Thank you, TSS!</p>
+                      <h3 class="text_red text-right"><i class="fa fa-quote-right"></i></h3>
+                      <div class="row mx-0 align-items-center justify-content-center">
+                        <img src="https://www.iaccelerated.com/wp-content/uploads/bb-plugin/cache/Eryk-Korfel-Profile-photo-407-by-407-pixels-square-square.png" alt="" class="d-inline testimonial_pic mr-3">
+                        <div class="d-inline">
+                          <p class="mb-0">Harsh Nair</p>
+                          <small>Tournament Organizer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item w-100">
+                    <div class="col-12 col-lg-8 offset-lg-2 text-center">
+                      <h3 class="mb-0 text_red text-left"><i class="fa fa-quote-left"></i></h3>
+                      <p class="mb-0 product_20">TSS Gaming hosts matches that are beginner-friendly and matches me with a team that matches my skill level. I have not participated in many of the competitions and this was one of my first tournaments and it went very smoothly! TSS’s website was really fast and easy to use, will definitely play more tournaments here.</p>
+                      <h3 class="text_red text-right"><i class="fa fa-quote-right"></i></h3>
+                      <div class="row mx-0 align-items-center justify-content-center">
+                        <img src="https://www.iaccelerated.com/wp-content/uploads/bb-plugin/cache/Eryk-Korfel-Profile-photo-407-by-407-pixels-square-square.png" alt="" class="d-inline testimonial_pic mr-3">
+                        <div class="d-inline">
+                          <p class="mb-0">Rohan Sisodia</p>
+                          <small>Amateur FreeFire Player</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ol class="carousel-indicators">
+                  <li data-target="#testimonial_carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#testimonial_carousel" data-slide-to="1"></li>
+                  <li data-target="#testimonial_carousel" data-slide-to="2"></li>
+                  <li data-target="#testimonial_carousel" data-slide-to="3"></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="py-5"></div>
+          <div class="row mx-0 text-center my-5">
+            <div class="col-12 mt-5">
+              <h3 class="mb-4 font-weight-bold">JOIN US TO GET UPDATES ABOUT TOURNAMENTS</h3>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 offset-md-2 offset-lg-3">
+              <form action="">
+                <input type="email" name="subscribe_email" id="" class="form-control w-100 mb-4 bahnschrift" placeholder="Email address" required>
+                <button type="submit" class="btn primary_btn px-4 mb-5">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-5"></div>
+    <footer class="mt-5 py-3 py-lg-5 product">
+      <div class="container-fluid">
+        <div class="row mx-0">
+          <div class="col-12 col-lg-10 offset-lg-1">
+            <img src="./images/logo tss.png" alt="" id="footer_logo">
+            <div class="row mx-0">
+              <div class="col-6 mb-3 pl-0">
+                <a href="#" class="nav-link px-0 d-inline mr-3"><b>Home</b></a>
+                <br class="d-lg-none">
+                <a href="./dashboard.html" class="nav-link px-0 d-inline mr-3"><b>Dashboard</b></a>
+                <br class="d-lg-none">
+                <a href="./profile.html" class="nav-link px-0 d-inline mr-3"><b>Profile</b></a>
+              </div>
+              <div class="col-6 col-lg-3 offset-lg-1 text-right mb-3 pr-0">
+                <a href="./about.html#contact_section" class="nav-link px-0 d-inline ml-3"><b>Contact</b></a>
+                <br class="d-lg-none">
+                <a href="./about.html" class="nav-link px-0 d-inline ml-3"><b>About</b></a>
+              </div>
+              <div class="col-12 col-lg-2 text-center text-lg-left">
+                <p class="text-white ml-3 ml-lg-0"><strong>Follow Us</strong></p>
+                <p class="ml-3 ml-lg-2"><strong>
+                  <a href="#" class="nav-link py-0 px-1 d-inline"><i class="fa fa-facebook-square"></i></a>
+                  <a href="#" class="nav-link py-0 px-1 d-inline"><i class="fa fa-instagram"></i></a>
+                </strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function readMore(n) {
+        var collapse_items = '.collapse_' + n;
+        $(collapse_items).collapse('toggle');
+        var arrow = '.down_arrow_' + n;
+        $(arrow).toggleClass("rotate_arrow");
+      }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          $('.navbar').toggleClass("navbar_scrolled", ($(window).scrollTop() > 100));
+          $('.navbar_logo').toggleClass("navbar_logo_scrolled", ($(window).scrollTop() > 100));
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $(".navbar-toggler").click(function(){
+          $(".navbar").toggleClass("navbar_open");
+        });
+      });
+    </script>
+  </body>
+</html>
